@@ -3,14 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
-.body__container {
+h2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 59px;
+    color: #333333;
+    margin-top: 100px;
+}
+.container {
     width: 1770px;
     margin: 0 auto;
 }
 .header__top {
     display: flex;
     justify-content: space-between;
-    position: relative;
 }
 .header__left {
     width: 224px;
@@ -46,8 +54,11 @@
     text-decoration: none;
     color: #333333;
 }
-.header__input {
+.header__search {
     position: relative;
+    height: 60px;
+}
+.header__input {
     background: #FFFFFF;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.12);
     border-radius: 16px;
@@ -55,9 +66,12 @@
 }
 .header__search img  {
     position: absolute;
-    top: 38px;
-    right: 5px;
+    top: 20px;
+    right: 11px;
     cursor: pointer;
+}
+.header__search img:hover {
+    border: 2px solid #FF9900;
 }
 .header__search.active{
     width: 539px;
@@ -128,4 +142,62 @@ input::placeholder {
 .slider__button:active {
     background: #E1670E;
 }
-
+.about-us__con {
+    padding-top: 50px;
+    display: flex;
+}
+.about-us__block {
+    max-width: 1235px;
+}
+.about-us__text--absolute {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+}
+.about-us__buildertext {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+.about-us p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 200%;
+}
+.about-us__text {
+    margin-top: 20px;
+    color: #333333;
+}
+.about-us__imgblock {
+    position: relative;
+}
+h3 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333333;
+}
+.about-us__content {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.about-us__textblock {
+    display: flex;
+    min-width: 870px;
+    min-height: 295px;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 32px;
+    border: 1px solid #CACACA;
+}
+.about-us__box {
+    max-width: 450px;
+}
+.about-us__text--absolute {
+    position: absolute;
+}
