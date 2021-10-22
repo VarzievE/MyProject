@@ -125,7 +125,7 @@ input::placeholder {
     display: inline-block;
     margin-top: 24px;
 }
-.slider__button  {
+.b-button  {
     display: inline-block;
     background: #FF9900;
     color: #fff;
@@ -134,8 +134,10 @@ input::placeholder {
     font-family:'montserrat';
     font-size: 24px;
     font-weight: bold;
+}
+.slider__button {
     margin-top: 90px;
-  }
+}
 .slider__button:hover {
    background: rgba(255, 153, 0, 0.7);
 }
@@ -151,8 +153,14 @@ input::placeholder {
 }
 .about-us__text--absolute {
     position: absolute;
-    bottom: 50px;
-    left: 50px;
+    bottom: 6px;
+    left:0;
+    display: flex;
+    width: 100%;
+    min-height: 196px;
+    align-items: center;
+    justify-content: space-around;
+    background: rgba(0, 0, 0, 0.5);
 }
 .about-us__buildertext {
     color: #FFFFFF;
@@ -164,6 +172,21 @@ input::placeholder {
     font-weight: normal;
     font-size: 16px;
     line-height: 200%;
+}
+.button-more {
+    padding: 20px 38px;
+    border: 3px solid #FF9900;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    font-family:'montserrat';
+    font-weight: bold;
+}
+.button-more:hover {
+    background: #FF9900;
+}
+.button-more:active {
+    background: #E1670E;
 }
 .about-us__text {
     margin-top: 20px;
@@ -186,7 +209,7 @@ h3 {
     flex-direction: column;
     justify-content: space-between;
 }
-.about-us__textblock {
+.b-textblock {
     display: flex;
     min-width: 870px;
     min-height: 295px;
@@ -195,9 +218,9 @@ h3 {
     margin-left: 32px;
     border: 1px solid #CACACA;
 }
-.about-us__box {
+.b-textblock__box {
     max-width: 450px;
 }
-.about-us__text--absolute {
-    position: absolute;
+.about-us__buildertext {
+    max-width: 454px;
 }
