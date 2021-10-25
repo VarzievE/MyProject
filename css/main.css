@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    font-family: "Montserrat", sans-serif;
+}
 h2 {
     font-family: 'Montserrat';
     font-style: normal;
@@ -225,3 +228,68 @@ input::placeholder {
 .about-us__buildertext {
     max-width: 454px;
 }
+.work__list {
+    display: flex;
+}
+.work__item {
+    list-style: none;
+}
+.work__item:not(:last-child) {
+    margin-right: 85px;
+}
+.work__button {
+    border:0;
+    background-color: #fff;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+    padding-top: 50px;
+    cursor: pointer;
+}
+.work__block h3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333333;
+    margin-bottom: 8px;
+}
+.work__block p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 200%;
+    max-width: 758px;
+}
+.work__more {
+    background-color: #FF9900;
+    margin-top: 50px;
+    display: inline-block;
+}
+.work__col img {
+    max-width: 870px;
+}
+.work__row {
+    padding-top: 45px;
+}
+.work__col {
+    display: flex;
+    justify-content: space-between;
+}
+.work__btn {
+    padding: 20px 38px;
+    border: 2px solid;
+    font-size: 16px;
+    color: #333333;
+    text-decoration: none;
+    font-family:'montserrat';
+    font-weight: bold;
+    margin-left: 30px;
+}
+.hide { display: none;}
+
