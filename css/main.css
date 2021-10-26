@@ -425,7 +425,6 @@ footer {
 }
 .application__input::placeholder {
     border: 0;
-    text-align: start;
 }
 .contact__message {
     height: 150px;
