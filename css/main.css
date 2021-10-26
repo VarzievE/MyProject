@@ -69,9 +69,10 @@ h2 {
 }
 .header__search img  {
     position: absolute;
-    top: 20px;
+    top: 17px;
     right: 11px;
     cursor: pointer;
+    border: 2px solid #fff;
 }
 .header__search img:hover {
     border: 2px solid #FF9900;
@@ -238,7 +239,7 @@ input::placeholder {
     margin-right: 85px;
 }
 .work__button {
-    border:0;
+    border: 1px solid #fff;
     background-color: #fff;
     font-family: 'Montserrat';
     font-style: normal;
@@ -246,8 +247,19 @@ input::placeholder {
     font-size: 18px;
     line-height: 22px;
     color: #333333;
-    padding-top: 50px;
+    margin-top: 50px;
     cursor: pointer;
+}
+.work__button:hover {
+    border: 1px solid #FF9900;
+    
+}
+.work__button:active {
+    color: #E1670E;
+}
+.work__button:focus-within {
+    color: #FF9900;
+
 }
 .work__block h3 {
     font-family: 'Montserrat';
@@ -271,13 +283,19 @@ input::placeholder {
     margin-top: 50px;
     display: inline-block;
 }
-.work__col img {
+.work__more:hover {
+    background-color: #F7B045;
+}
+.work__more:active {
+    background-color: #E1670E;
+}
+.work__slide img {
     max-width: 870px;
 }
-.work__row {
+.work__slider {
     padding-top: 45px;
 }
-.work__col {
+.work__slide {
     display: flex;
     justify-content: space-between;
 }
@@ -291,5 +309,101 @@ input::placeholder {
     font-weight: bold;
     margin-left: 30px;
 }
-.hide { display: none;}
-
+.work__btn:hover {
+    background-color:#666666;
+    color: #FFFFFF;
+}
+.work__btn:active {
+    background-color: #000000;
+}
+.hide { display: none;
+}
+.questions__block {
+    padding-top: 32px;
+    padding-bottom: 100px;
+}
+.spoiler {
+    border-top: 1px solid #CACACA;
+}
+.spoiler:nth-child(5){
+    border-bottom: 1px solid #CACACA;
+}
+.spoiler input, .spoiler div  { 
+    display: none; 
+}
+.spoiler :checked ~ div {
+    display: block;
+}
+  /* Закрытый спойлер */
+.spoiler label::after {
+    margin-right: 5px;
+    content: url(/images/Elipse1.png);
+}
+  /* Открытый спойлер */
+.spoiler :checked + label::after {
+    content: url(/images/Elipse2.png);
+}
+.spoiler__label {
+    display: flex;
+    justify-content: space-between;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    align-items: center;
+    color: #333333;
+    min-height: 112px;
+}
+.questions__text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+    color: #333333;
+    max-width: 1003px;
+    margin-bottom: 40px;
+}
+footer {
+    background: #222222;
+}
+.footer__row {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+}
+.footer__left {
+    display: inline-block;
+}
+.footer__item {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 36px;
+    color: #CACACA;
+    list-style: none;
+}
+.footer__list a {
+    text-decoration: none;
+    color: #CACACA;
+}
+.footer__social {
+    margin-top: 90px;
+}
+.footer__social a:not(:last-child) {
+    margin-right: 25px;
+}
+.application__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 59px;
+    color: #CACACA;
+}
+.application__search {
+    display: flex;
+    flex-direction: column;
+}
