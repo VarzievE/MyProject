@@ -372,6 +372,7 @@ footer {
     padding-top: 50px;
     padding-bottom: 50px;
     display: flex;
+    justify-content: space-between;
 }
 .footer__left {
     display: inline-block;
@@ -388,6 +389,9 @@ footer {
 .footer__list a {
     text-decoration: none;
     color: #CACACA;
+}
+.footer__list {
+    margin-top: 20px;
 }
 .footer__social {
     margin-top: 90px;
@@ -406,4 +410,51 @@ footer {
 .application__search {
     display: flex;
     flex-direction: column;
+}
+.application__input {
+    width: 570px;
+    min-height: 60px;
+    margin-top: 25px;
+    background-color: #414141;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    line-height: 32px;
+    padding-left: 25px;
+    color: #fff;
+    border: 0;
+}
+.application__input::placeholder {
+    border: 0;
+    text-align: start;
+}
+.contact__message {
+    height: 150px;
+}
+.application__btn {
+    padding: 20px 38px;
+    font-size: 16px;
+    color:#fff ;
+    background-color: #FF9900;
+    text-decoration: none;
+    font-family:'montserrat';
+    font-weight: bold;
+    margin-top: 32px;
+    cursor: pointer;
+}
+.application__btn:hover {
+    background-color: #F7B045;
+}
+.application__btn:active {
+    background-color: #E1670E;
+}
+.footer__right {
+    max-width: 363px;
+    display: flex;
+    align-items: center;
+}
+.footer__right p {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    line-height: 32px;
+    color: #CACACA;
 }
