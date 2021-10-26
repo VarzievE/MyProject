@@ -337,11 +337,11 @@ input::placeholder {
   /* Закрытый спойлер */
 .spoiler label::after {
     margin-right: 5px;
-    content: url(/images/Elipse1.png);
+    content: url(/images/elipse1.png);
 }
   /* Открытый спойлер */
 .spoiler :checked + label::after {
-    content: url(/images/Elipse2.png);
+    content: url(/images/elipse2.png);
 }
 .spoiler__label {
     display: flex;
