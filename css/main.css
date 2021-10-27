@@ -16,7 +16,7 @@ h2 {
     margin-top: 100px;
 }
 .container {
-    width: 1770px;
+    max-width: 1770px;
     margin: 0 auto;
 }
 .header__top {
@@ -110,6 +110,7 @@ input::placeholder {
     top: 100px;
     width: 837px;
     display: inline-block;
+    max-width: 837px;
 }
 .slider__h1 {
     font-family: 'Montserrat';
@@ -151,6 +152,7 @@ input::placeholder {
 .about-us__con {
     padding-top: 50px;
     display: flex;
+    flex-wrap: wrap;
 }
 .about-us__block {
     max-width: 1235px;
@@ -210,7 +212,6 @@ input::placeholder {
 }
 .about-us__content {
     display: flex;
-    width: 100%;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -297,6 +298,7 @@ input::placeholder {
 }
 .work__slide {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .work__btn {
@@ -373,6 +375,7 @@ footer {
     padding-bottom: 50px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .footer__left {
     display: inline-block;
@@ -412,7 +415,7 @@ footer {
     flex-direction: column;
 }
 .application__input {
-    width: 570px;
+    max-width: 570px;
     min-height: 60px;
     margin-top: 25px;
     background-color: #414141;
@@ -456,4 +459,11 @@ footer {
     font-size: 16px;
     line-height: 32px;
     color: #CACACA;
+}
+.application__label {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    line-height: 32px;
+    color: #CACACA;
+    margin-left: 20px;
 }

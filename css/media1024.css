@@ -1,0 +1,8 @@
+@media (max-width:1024px) {
+    .header__left {
+        margin: 0 auto;
+    }
+    .header__item {
+        display: none;
+    }
+}
