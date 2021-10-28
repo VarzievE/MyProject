@@ -19,9 +19,45 @@ h2 {
     max-width: 1770px;
     margin: 0 auto;
 }
+.pop-menu__list, .pop-menu__img, .pop-menu__input {
+    display:none;
+}
+.pop-menu__list{
+    background-color: #fff;
+    opacity: 0.9;
+}
+.pop-menu {
+    position: absolute;
+    top: 40%;
+    z-index: 1;
+    width: 50%;
+}
+.pop-menu__item {
+    font-family: 'montserrat';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 22px;
+}
+.pop-menu__item a:hover {
+    color: #FF9900;
+}
+.pop-menu__list a {
+    text-decoration: none;
+    color: #333333;
+}
+.pop-menu__list {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex-direction: column;
+    min-height: 500px;
+    justify-content: space-around;
+}
 .header__top {
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 .header__left {
     width: 224px;
@@ -214,10 +250,11 @@ input::placeholder {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    min-width: 50%;
 }
 .b-textblock {
     display: flex;
-    min-width: 870px;
+    max-width: 100%;
     min-height: 295px;
     align-items: center;
     justify-content: space-evenly;
@@ -262,6 +299,9 @@ input::placeholder {
     color: #FF9900;
 
 }
+.work__block {
+    min-width: 50%;
+}
 .work__block h3 {
     font-family: 'Montserrat';
     font-style: normal;
@@ -291,7 +331,8 @@ input::placeholder {
     background-color: #E1670E;
 }
 .work__slide img {
-    max-width: 870px;
+    width: 48%;
+    flex-grow: 1;
 }
 .work__slider {
     padding-top: 45px;
@@ -466,4 +507,5 @@ footer {
     line-height: 32px;
     color: #CACACA;
     margin-left: 20px;
+    display: inline-block;
 }
