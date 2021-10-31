@@ -231,6 +231,7 @@ input::placeholder {
     align-items: center;
     justify-content: space-around;
     background: rgba(0, 0, 0, 0.5);
+    padding: 50px;
 }
 .about-us__buildertext {
     color: #FFFFFF;
