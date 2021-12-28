@@ -180,9 +180,9 @@ input::placeholder {
 	position: relative;
 }
 .slider__gallery {
-	background-image: url(../images/img1.jpg);
+	/* background-image: url(../images/img1.jpg);*/
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: cover; 
 }
 .slider__text {
 	padding: 100px 0px 100px 80px;
