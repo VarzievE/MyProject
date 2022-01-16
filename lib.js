@@ -11,7 +11,7 @@ $(document).ready(function(){
     loop: true,
     speed: 700,
     autoplay: {
-      delay: 3800,
+      delay: 3300,
     },
     pagination: {
       el: '.slider__pagination',
