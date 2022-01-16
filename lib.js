@@ -8,7 +8,8 @@ $(document).ready(function(){
 
   /* SWIPER-SLIDER */
   const swiper = new Swiper('.swiper', {
-    parallax: true,
+    loop: true,
+    speed: 700,
     autoplay: {
       delay: 3800,
     },
