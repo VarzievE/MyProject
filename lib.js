@@ -8,6 +8,10 @@ $(document).ready(function(){
 
   /* SWIPER-SLIDER */
   const swiper = new Swiper('.swiper', {
+    parallax: true,
+    autoplay: {
+      delay: 3800,
+    },
     pagination: {
       el: '.slider__pagination',
       clickable: true,
