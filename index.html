@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="swiper-slider/swiper-bundle.min.css">
     <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="css/media1024.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -40,7 +41,7 @@
                         </ul>
                         <div class="header__search">
                             <form class="header__form">
-                                <input class="header__input" type="text" class="input" placeholder="Что будем искать?">
+                                <input class="header__input" type="text" clas s="input" placeholder="Что будем искать?">
                             </form>
                             <img class="header__fasearch" src="images/search.png" alt="поиск"></i>
                             <i class="far fa-times-circle"></i>
@@ -51,15 +52,31 @@
         </header>
         <main class="main">
             <div class="container">
-                <section class="slider"> 
-                    <div class="slider__gallery">                
-                        <div class="slider__text">
+                <!-- Slider main container -->
+                <div class="slider swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="slider__wrapper swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide" style="background-image: url(../images/slide-images/1.jpg);">
+                            <h1 class="slider__h1">Проектные решения любой сложности</h1>
+                            <p class="slider__p">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов</p>
+                            <a class="slider__button b-button" href="#" target="_blank">Заказать расчет</a>
+                        </div>
+                        <div class="swiper-slide" style="background-image: url(../images/slide-images/2.jpg);">
+                            <h1 class="slider__h1">Проектные решения любой сложности</h1>
+                            <p class="slider__p">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов</p>
+                            <a class="slider__button b-button" href="#" target="_blank">Заказать расчет</a>
+                        </div>
+                        <div class="swiper-slide" style="background-image: url(../images/slide-images/3.jpg);">
                             <h1 class="slider__h1">Проектные решения любой сложности</h1>
                             <p class="slider__p">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов</p>
                             <a class="slider__button b-button" href="#" target="_blank">Заказать расчет</a>
                         </div>
                     </div>
-                </section>
+                    <div class="slider__pagination">
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
             </div>
             <section class="about-us">
                 <div class="container">
@@ -243,6 +260,7 @@
             </div>
         </footer>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+        <script src="swiper-slider/swiper-bundle.min.js"></script>
         <script src="lib.js"></script>
         <script src="function.js"></script>
     </div>
